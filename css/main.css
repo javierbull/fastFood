@@ -1,0 +1,120 @@
+/* ESTILOS GENERALES */
+:root {
+    --dark: #212328;
+    --gray: #9C9DA1;
+    --gray-light: #EFEFF4;
+    --white: #FFFFFF;
+    --primary-dark: #D3381F;
+    --primary: #F55A03;
+    --success-dark: #0f5132;
+    --success: #47BD8F;
+    --success-light: #C1F8CF;
+    --info-dark: #1A52AD;
+    --info: #2972E6;
+    --info-light: #CFE2FF;
+    --danger-dark: #A20F1D;
+    --danger: #FF5C5D;
+    --danger-light: #F8D7DA;
+    --warning-dark: #7F4D03;
+    --warning: #FFAC32;
+    --warning-light: #FFF3CD;
+}
+
+html {
+    font-size: 16px;
+  }
+  
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    color: var(--dark);
+    font-family: 'Mitr', sans-serif;
+    line-height: normal;
+    font-weight: 300;
+  }
+
+  main {
+    background-color: var(--gray-light);
+  }
+
+  /* Tipografia */
+
+  h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+  }
+
+  h2 {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+
+  h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+
+  h4 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  h5 {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  h6 {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+
+  .subtitle-1 {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .subtitle-2 {
+    font-size: .875rem;
+    font-weight: 500;
+  }
+
+  .body-1 {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+
+  .body-2 {
+    font-size: .875rem;
+    font-weight: 300;
+  }
+
+  .body-3 {
+    font-size: .875rem;
+    font-weight: 300;
+    text-decoration: line-through;
+  }
+
+  .btn {
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  .caption {
+    font-size: .8125rem;
+    font-weight: 400;
+  }
+
+  .overline {
+    font-size: .8125rem;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+  /* Fin tipografia */
+
+  /* FIN ESTILOS GENERALES */
