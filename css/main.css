@@ -39,6 +39,7 @@ html {
 
   main {
     background-color: var(--gray-light);
+    min-height: 100vh;
   }
 
   /* Typography */
@@ -144,3 +145,27 @@ html {
 
 
   /* FIN ESTILOS GENERALES */
+
+  /* INDEX */
+  .navbar-top {
+    background-color: lavender;
+    padding: 1rem 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar-top-right {
+    background-color: #C1F8CF;
+    display: flex;
+    align-items: center;
+    grid-gap: 2rem;
+  }
+
+  .info-delivery {
+    background-color: pink;
+    display: flex;
+    align-items: center;
+    grid-gap: .25rem;;
+  }
+  /* END INDEX */
