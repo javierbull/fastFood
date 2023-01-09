@@ -148,24 +148,65 @@ html {
 
   /* INDEX */
   .navbar-top {
-    background-color: lavender;
+    background-color: var(--white);
     padding: 1rem 3.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
+  .navbar-brand {
+    /* background-color: lightblue; */
+    height: 3.5rem;
+  }
+
+  .navbar-brand-img {
+    /* background-color: blue; */
+    height: 100%;
+  }
+
   .navbar-top-right {
-    background-color: #C1F8CF;
+    /* background-color: #C1F8CF; */
     display: flex;
     align-items: center;
     grid-gap: 2rem;
   }
 
   .info-delivery {
-    background-color: pink;
+    /* background-color: pink; */
     display: flex;
     align-items: center;
-    grid-gap: .25rem;;
+    grid-gap: .25rem;
+  }
+
+  .info-delivery span {
+    font-size: 2.5rem;
+  }
+
+  .delivery-label {
+    color: var(--primary);
+  }
+
+  .navbar-categories {
+    /* background-color: pink; */
+    padding: .5rem 3.5rem;
+  }
+
+  .menu-categories {
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  }
+
+  .menu-categories a {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--dark);
+  }
+
+  .menu-categories a:hover {
+    color: var(--primary);
   }
   /* END INDEX */
