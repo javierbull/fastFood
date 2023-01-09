@@ -147,9 +147,10 @@ html {
   /* FIN ESTILOS GENERALES */
 
   /* INDEX */
+
   .navbar-top {
     background-color: var(--white);
-    padding: 1rem 3.5rem;
+    padding: .5rem 3.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -209,4 +210,17 @@ html {
   .menu-categories a:hover {
     color: var(--primary);
   }
+
+  /* Hero section */
+  .hero {
+    background-color: salmon;
+    height: 25rem;
+    background-image: url(../img/banners/hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  /* End Hero section */
+
+
   /* END INDEX */
