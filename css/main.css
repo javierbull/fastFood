@@ -272,4 +272,79 @@ html {
       justify-content: center;
     }
     /* End Card Product */
+
+    /* Footer */
+    footer {
+      background-color: var(--dark);
+      padding: 2rem 3.5rem;
+      color: var(--white);
+    }
+
+    .footer-header {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+
+    .footer-header img {
+      height: 3.5rem;
+    }
+
+    .footer-body {
+      margin-bottom: 2rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .footer-list {
+      /* background-color: lightgreen; */
+      width: 15rem;
+      list-style: none;
+      color: var(--white);
+    }
+
+    .title-list {
+      text-transform: uppercase;
+    }
+
+    .footer-list li {
+      margin-bottom: 1rem;
+    }
+
+    .footer-list a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: var(--white);
+    }
+
+    .footer-list a:hover {
+      color: var(--primary);
+    }
+
+    .footer-social {
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+    }
+
+    .footer-social h6 {
+      margin-bottom: 1rem;
+    }
+
+    .container-socials {
+      display: flex;
+      justify-content: center;
+      grid-gap: 2rem;
+    }
+
+    .container-socials img {
+      display: inline-block;
+      height: 2.5rem;
+    }
+
+    .footer-rights {
+      text-align: center;
+    }
+    /* End Footer */
   /* END INDEX */
