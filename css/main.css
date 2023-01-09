@@ -213,7 +213,7 @@ html {
 
   /* Hero section */
   .hero {
-    background-color: salmon;
+    background-color: var(--gray);
     height: 25rem;
     background-image: url(../img/banners/hero.jpg);
     background-position: center;
@@ -222,5 +222,54 @@ html {
   }
   /* End Hero section */
 
+    /* Sections */
+    .section {
+      /* background-color: #47BD8F; */
+      padding: 2.5rem 3.5rem;
+    }
 
+    .header-section {
+      /* background-color: pink; */
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+    }
+
+    .header-section h2 {
+      font-size: 2rem;
+    }
+    /* End Sections */
+
+    /* Card Product */
+    .container-products {
+      /* background-color: pink; */
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      grid-gap: 1.5rem;
+    }
+
+    .card-product {
+      /* background-color: deepskyblue; */
+      width: 400;
+      height: 300;
+      border-radius: 1rem;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .card-product img {
+      height: 100%;
+    }
+
+    .card-product-footer {
+      /* background-color: blue; */
+      position: absolute;
+      bottom: 1.5rem;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    /* End Card Product */
   /* END INDEX */
