@@ -505,7 +505,10 @@ html {
 
     .card-product-footer {
       /* background-color: pink; */
+      height: 3.5rem;
       padding: 0 1rem 1rem 1rem;
+      display: flex;
+      justify-content: center;
     }
   /* END CATEGORY PAGE*/
 
@@ -629,3 +632,8 @@ html {
       padding-bottom: 7.5rem;
     }
   /* END PRODUCT DETAIL PAGE */
+
+  /* CART PAGE */
+  
+  /* END CART PAGE */
+
