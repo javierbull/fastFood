@@ -45,6 +45,10 @@ html {
     padding-top: 7.5rem;
   }
 
+  hr {
+    border: 1px solid var(--dark);
+  }
+
   /* Typography */
 
   h1 {
@@ -642,6 +646,7 @@ html {
     display: flex;
     gap: 2rem;
     justify-content: center;
+    align-items: flex-start;
   }
 
   .section-cart {
@@ -699,6 +704,36 @@ html {
     padding: 2rem;
     box-shadow: var(--card-shadow);
     border-radius: 1rem;
+  }
+
+  .summary hr {
+    margin-bottom: 1rem;
+  }
+
+  .summary-body {
+    margin-bottom: 2rem;
+  }
+
+  .summary-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+
+  .summary-item-price {
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+
+  .summary-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .summary-footer .btn {
+    width: 100%;
   }
   /* END CART PAGE */
 
