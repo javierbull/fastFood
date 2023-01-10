@@ -248,24 +248,25 @@ html {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      grid-gap: 1.5rem;
+      grid-gap: 2rem;
     }
 
-    .card-product {
+    .card-category {
       background-color: deepskyblue;
       width: 550px;
       height: auto;
       border-radius: 1rem;
       overflow: hidden;
       position: relative;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
 
-    .card-product img {
+    .card-category img {
       width: 100%;
       height: 100%;
     }
 
-    .card-product-title {
+    .card-category-title {
       /* background-color: #2972E6; */
       position: absolute;
       width: 100%;
@@ -273,7 +274,7 @@ html {
       text-align: center;
     }
 
-    .card-product-title {
+    .card-category-title {
       color: var(--white);
       text-shadow: -4px -4px 0 var(--primary), 
       -4px -3px 0 var(--primary), 
@@ -358,7 +359,7 @@ html {
       4px 4px 0 var(--primary);
     }
 
-    .card-product-footer {
+    .card-category-footer {
       /* background-color: blue; */
       position: absolute;
       bottom: 1.5rem;
@@ -445,5 +446,54 @@ html {
   /* END INDEX */
 
   /* CATEGORY PAGE*/
+    .container-cards-products {
+      /* background-color: peru; */
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
 
+    .card-product {
+      /* background-color: lightblue; */
+      width: 20rem;
+      text-align: center;
+      overflow: hidden;
+      border-radius: 1rem;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .card-product-header {
+      /* background-color: #F55A03; */
+      width: 20rem;
+      height: 20rem;
+    }
+
+    .card-product-header img {
+      width: 100%;
+     height: 100%;
+    }
+
+    .card-product-body {
+      /* background-color: #47BD8F; */
+      height: 8.75rem;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .card-product-title {
+      line-height: 1.2;
+    }
+
+    .card-product-price {
+      font-size: 2rem;
+      font-weight: 500;
+    }
+
+    .card-product-footer {
+      /* background-color: pink; */
+      padding: 0 1rem 1rem 1rem;
+    }
   /* END CATEGORY PAGE*/
