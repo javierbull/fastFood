@@ -49,31 +49,37 @@ html {
   h1 {
     font-size: 3.5rem;
     font-weight: 700;
+    line-height: 1.2;
   }
 
   h2 {
     font-size: 3rem;
     font-weight: 700;
+    line-height: 1.2;
   }
 
   h3 {
     font-size: 2.5rem;
     font-weight: 700;
+    line-height: 1.2;
   }
 
   h4 {
     font-size: 2rem;
     font-weight: 600;
+    line-height: 1.2;
   }
 
   h5 {
     font-size: 1.5rem;
     font-weight: 600;
+    line-height: 1.2;
   }
 
   h6 {
     font-size: 1.25rem;
     font-weight: 600;
+    line-height: 1.2;
   }
 
   .subtitle-1 {
@@ -506,3 +512,98 @@ html {
       padding: 0 1rem 1rem 1rem;
     }
   /* END CATEGORY PAGE*/
+
+  /* PRODUCT DETAIL PAGE */
+    .section-product-detail {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+    
+    .product-detail {
+      /* background-color: lavender; */
+      width: 34rem;
+    }
+    
+    .product-detail-title {
+      margin-bottom: 1rem;
+    }
+    
+    .product-detail-description {
+      list-style: square;
+      margin-left: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .product-detail-img {
+      width: 100%;
+      border-radius: 1rem;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .product-customization {
+      background-color: var(--white);
+      width: 42rem;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      padding: 2rem;
+      border-radius: 1rem;
+    }
+
+    .product-customization-option-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .number-option {
+      background-color: var(--primary);
+      color: var(--white);
+      font-size: 1.5rem;
+      font-weight: 600;
+      min-height: 2.5rem;
+      min-width: 2.5rem;
+      border-radius: 50%;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .wrap-product-extra-control {
+      /* background-color: pink; */
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+    }
+
+    .wrap-product-extra-control p {
+      font-size: 1.2rem;
+    }
+
+    .wrap-product-extra-control p span {
+      font-weight: 500;
+    }
+
+    .control-product-extra {
+      /* background-color: salmon; */
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+    }
+
+    .control-product-extra .btn {
+      cursor: pointer;
+    }
+
+    .input-number-extra {
+      border: none;
+      height: 2.5rem;
+      user-select: none;
+      font-size: 1.5rem;
+      width: 4rem;
+      padding-left: 1.2rem;
+    }
+
+    
+  /* END PRODUCT DETAIL PAGE */
