@@ -282,14 +282,10 @@ html {
     }
 
     .card-category-title {
-      /* background-color: #2972E6; */
       position: absolute;
       width: 100%;
-      top: .5rem;
+      top: 1rem;
       text-align: center;
-    }
-
-    .card-category-title {
       color: var(--white);
       text-shadow: -4px -4px 0 var(--primary), 
       -4px -3px 0 var(--primary), 
@@ -522,7 +518,7 @@ html {
     
     .product-detail {
       /* background-color: lavender; */
-      width: 34rem;
+      width: 35rem;
     }
     
     .product-detail-title {
