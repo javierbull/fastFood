@@ -737,3 +737,25 @@ html {
   }
   /* END CART PAGE */
 
+  /* CHECKOUT PAGE */
+  .wrap-checkout-summary {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  .checkout {
+    background-color: var(--white);
+    padding: 2rem;
+    width: 42rem;
+    box-shadow: var(--card-shadow);
+    border-radius: 1rem;
+  }
+
+  .big-form-label {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  /* END CHECKOUT PAGE */
+
