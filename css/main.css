@@ -549,6 +549,10 @@ html {
       border-radius: 1rem;
     }
 
+    .product-customization-option {
+      margin-bottom: 2rem;
+    }
+
     .product-customization-option-header {
       display: flex;
       align-items: center;
