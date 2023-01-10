@@ -138,6 +138,10 @@ html {
     align-items: center;
   }
 
+  .btn:hover {
+    cursor: pointer;
+  }
+
   .button-primary {
     background-color: var(--primary);
     color: var(--white);
@@ -600,10 +604,6 @@ html {
       gap: .5rem;
     }
 
-    .control-product-extra .btn {
-      cursor: pointer;
-    }
-
     .input-number-extra {
       border: none;
       height: 2.5rem;
@@ -638,6 +638,12 @@ html {
 
   /* CART PAGE */
 
+  .wrap-cart-summary {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+  }
+
   .section-cart {
     background-color: var(--white);
     width: 42rem;
@@ -660,6 +666,7 @@ html {
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
+    margin-bottom: 2rem;
   }
 
   .wrap-cart-product-name-price {
@@ -684,6 +691,14 @@ html {
     flex-direction: column;
     align-items: flex-end;
     gap: 1rem;
+  }
+
+  .summary {
+    background-color: var(--white);
+    width: 32rem;
+    padding: 2rem;
+    box-shadow: var(--card-shadow);
+    border-radius: 1rem;
   }
   /* END CART PAGE */
 
