@@ -49,6 +49,11 @@ html {
     border: 1px solid var(--dark);
   }
 
+  fieldset {
+    /* background-color: pink; */
+    border: none;
+  }
+
   /* Typography */
 
   h1 {
@@ -759,8 +764,8 @@ html {
     margin-bottom: .5rem;
   }
 
-  .form-group {
-    margin-bottom: 2rem;
+  .wrap-inputs {
+    margin-bottom: 1.5rem;
   }
 
   .wrap-address-delivery {
@@ -798,6 +803,12 @@ html {
   .wrap-address-delivery input[type=radio]:checked + label {
     background: var(--success);
     color: var(--white);
+  }
+
+  .wrap-form-row {
+    display: flex;
+    align-items: flex-end;
+    gap: 1rem;
   }
   /* END CHECKOUT PAGE */
 

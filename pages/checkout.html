@@ -89,49 +89,109 @@
                     </h4>
                 </div>
                 <div class="checkout-body">
-                    <div class="form-group">
-                        <p class="big-form-label">Tipo de entrega</p>
-                        <div class="wrap-form-row">
-                            <input type="radio" id="delivery" name="deliveryType" value="Delivery">
-                            <label for="delivery">Delivery</label>
-                            <input type="radio" id="pickup" name="deliveryType" value="pickup">
-                            <label for="pickup">Recojo en tienda</label><br>
+                    <form class="form-checkout">
+                        <div class="wrap-inputs">
+                            <p class="big-form-label">Tipo de entrega</p>
+                            <div class="form-group">
+                                <input type="radio" id="delivery" name="deliveryType" value="Delivery" checked>
+                                <label for="delivery">Delivery</label>
+                                <input type="radio" id="pickup" name="deliveryType" value="pickup">
+                                <label for="pickup">Recojo en tienda</label><br>
+                            </div>
                         </div>
-                    </div>
+    
+                        <div class="wrap-inputs">
+                            <p class="big-form-label">Dirección de envío</p>
+                            <div class="wrap-address-delivery">
+                                <div class="radio-address-group">
+                                    <input type="radio" class="radioAddress" id="address1" name="selectAddress"/ checked>
+                                    <label for="address1" class="label-address">
+                                        <h6>
+                                            Casa
+                                        </h6>
+                                        <p>
+                                            Av. Arenales 1920
+                                        </p>
+                                        <p>
+                                            Lince
+                                        </p>
+                                    </label>
+                                </div>
+                                <div class="radio-address-group">
+                                    <input type="radio" class="radioAddress" id="address2" name="selectAddress"/>
+                                    <label for="address2" class="label-address">
+                                        <h6>
+                                            Oficina
+                                        </h6>
+                                        <p>
+                                            Av. Benavides 456
+                                        </p>
+                                        <p>
+                                            Surco
+                                        </p>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="wrap-inputs">
+                            <p class="big-form-label">¿Quién recibirá el pedido?</p>
+                            <div class="form-group">
+                                <input type="radio" id="user" name="receives" value="user" checked>
+                                <label for="user">Yo mismo</label>
+                                <input type="radio" id="another" name="receives" value="another">
+                                <label for="another">Otra persona</label><br>
+                            </div>
+                        </div>
 
-                    <div class="form-group">
-                        <p class="big-form-label">Dirección de envío</p>
-                        <div class="wrap-address-delivery">
-                            <div class="radio-address-group">
-                                <input type="radio" class="radioAddress" id="address1" name="selectAddress"/ checked>
-                                <label for="address1" class="label-address">
-                                    <h6>
-                                        Casa
-                                    </h6>
-                                    <p>
-                                        Av. Arenales 1920
-                                    </p>
-                                    <p>
-                                        Lince
-                                    </p>
-                                </label>
+                        <fieldset class="wrap-inputs">
+                            <div class="wrap-form-row">
+                                <div class="form-group">
+                                    <label for="fname">Nombre</label><br>
+                                    <input type="text" id="fname" name="fname" value="Javier"><br>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lname">Apellidos</label><br>
+                                    <input type="text" id="lname" name="lname" value="Bull">
+                                </div>
                             </div>
-                            <div class="radio-address-group">
-                                <input type="radio" class="radioAddress" id="address2" name="selectAddress"/>
-                                <label for="address2" class="label-address">
-                                    <h6>
-                                        Oficina
-                                    </h6>
-                                    <p>
-                                        Av. Benavides 456
-                                    </p>
-                                    <p>
-                                        Surco
-                                    </p>
-                                </label>
+
+                            <div class="wrap-form-row">
+                                <div class="form-group">
+                                    <label for="type-id">Tipo de documento</label><br>
+                                    <select name="cars" id="type-id">
+                                      <option value="DNI" selected>DNI</option>
+                                      <option value="CE">CE</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="user-id">Número del documento</label><br>
+                                    <input type="text" id="user-id" name="lname" value="73450870">
+                                </div>
+                            </div>
+
+                            <div class="wrap-form-row">
+                                <div class="form-group">
+                                    <label for="user-email">Correo</label><br>
+                                    <input type="email" id="user-email" name="fname" value="javierbull@gmail.com"><br>
+                                </div>
+                                <div class="form-group">
+                                    <label for="user-tel">Celular</label><br>
+                                    <input type="tel" id="user-tel" name="" value="966-337-852">
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <div class="wrap-inputs">
+                            <p class="big-form-label">Seleccione método de pago</p>
+                            <div class="form-group">
+                                <input type="radio" id="payment-registered" name="payment" value="payment-registered" checked>
+                                <label for="payment-registered">Mi mastercard que termina en 4562</label>
+                                <input type="radio" id="new-payment" name="payment" value="new-payment">
+                                <label for="new-payment">Agregar tarjeta</label><br>
                             </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </section>
 
