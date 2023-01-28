@@ -42,7 +42,7 @@ html {
   main {
     background-color: var(--gray-light);
     min-height: 100vh;
-    padding-top: 7.5rem;
+    padding-top: 8.8125rem;
   }
 
   hr {
@@ -232,6 +232,7 @@ html {
     display: flex;
     justify-content: space-between;
     list-style: none;
+    margin-bottom: 0;
   }
 
   .menu-categories a {
