@@ -42,7 +42,7 @@ html {
   main {
     background-color: var(--gray-light);
     min-height: 100vh;
-    padding-top: 8.8125rem;
+    padding-top: 7.375rem;
   }
 
   hr {
@@ -239,8 +239,14 @@ html {
     font-size: 2.5rem;
   }
 
+  .wrap-delivery-number p {
+    /* background-color: lavender; */
+    margin-bottom: 0;
+  }
+
   .delivery-label {
     color: var(--primary);
+
   }
 
   .navbar-categories {
@@ -254,6 +260,7 @@ html {
     justify-content: space-between;
     list-style: none;
     margin-bottom: 0;
+    padding-left: 0;
   }
 
   .menu-categories a {
