@@ -323,7 +323,9 @@ html {
   /* End Off canvas categories mobile */
 
   /* Carousel */
-
+  .carousel-mobile {
+    display: none;
+  }
   /* End Carousel */
 
     /* Sections */
