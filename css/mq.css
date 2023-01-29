@@ -75,6 +75,8 @@
 
 /* Cell landscape */
 @media (max-width: 736px) {
+
+    /* Index */
     .btn-categorias-tablet, .btn-user-name {
         display: none;
     }
@@ -84,6 +86,16 @@
         padding: .5rem;
         font-size: 2rem;
     }
+
+    .header-section {
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+
+    .header-section .btn {
+        display: none;
+    }
+    /* End index */
 
 }
 
@@ -104,8 +116,9 @@
         padding: 1.5rem;
     }
 
-    .header-section h2 {
-        font-size: 1.5rem;
+    .footer-list {
+        text-align: center;
+        padding-left: 0;
     }
 
     .card-category {
