@@ -419,6 +419,7 @@ html {
       width: 15rem;
       list-style: none;
       color: var(--white);
+      padding-left: 0;
     }
 
     .title-list {
