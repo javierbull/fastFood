@@ -211,6 +211,16 @@ html {
     align-items: center;
   }
 
+  .navbar-top-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .btn-categorias-mobile {
+    display: none;
+  }
+
   .navbar-brand {
     /* background-color: lightblue; */
     height: 3.5rem;

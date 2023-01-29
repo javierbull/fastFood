@@ -4,43 +4,56 @@
 /* Fin laptop */
 /* Tablet landscape */
 @media (max-width: 1024px) {
+/* Index */
+    main {
+        padding-top: 4.5rem;
+    }
 
+    .navbar-categories {
+    /* background-color: pink; */
+        padding: 0 3.5rem;
+    }
+
+    .menu-categories {
+        display: none;
+    }
+
+    .btn-categorias-mobile {
+        display: block;
+    }
+
+    .navbar-top {
+
+    }
+
+/* End index */
 }
 
 /* Fin tablet landscape */
-/* Big cell landscape */
-@media (max-width: 916px) {
 
-}
-
-/* Fin Big cell landscape */
 /* Tablet portrait */
 @media (max-width: 768px) {
-  
+    .info-delivery {
+        display: none;
+    }
+
+    .navbar-top-right {
+        grid-gap: 1rem;
+    }
 }
 
 /* fin tablet portrait */
+
 /* Cell landscape */
 @media (max-width: 736px) {
 
 }
 
 /* Fin cell landscape */
-/* Small cell landscape */
-@media (max-width: 568px) {
 
-}
-
-/* Fin small cell landscape */
 /* Cell portrait */
 @media (max-width: 480px) {
 
 }
 
 /* Fin cell portrait */
-/* Small cell portrait */
-@media (max-width: 360px) {
-
-}
-
-/* Fin small cell portrait */
