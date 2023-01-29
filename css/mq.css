@@ -110,7 +110,11 @@
 
     .card-category {
         width: 100%;
-      }
+    }
+
+    .offcanvas-categories-mobile {
+        width: 75vw !important;
+    }
     /* End index */
 }
 

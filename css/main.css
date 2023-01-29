@@ -295,6 +295,33 @@ html {
   }
   /* End Hero section */
 
+  /* Off canvas categories mobile */
+  .menu-sidebar-mobile {
+    /* background-color: lavender; */
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .menu-sidebar-mobile li {
+    margin-bottom: 1.5rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+
+  .menu-sidebar-mobile li a {
+    color: var(--dark);
+    text-decoration: none;
+  }
+
+  .offcanvas-categories-mobile .offcanvas-header {
+    /* background-color: #C1F8CF; */
+    display: flex;
+    justify-content: center;
+  }
+
+  /* End Off canvas categories mobile */
+
   /* Carousel */
 
   /* End Carousel */
