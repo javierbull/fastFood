@@ -342,7 +342,7 @@ html {
       margin-bottom: 1rem;
     }
 
-    .header-section h2 {
+    .header-section h1, .header-section h2 {
       font-size: 2rem;
       margin-bottom: 0;
     }
