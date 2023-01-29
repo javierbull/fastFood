@@ -18,7 +18,7 @@
         display: none;
     }
 
-    .btn-categorias-mobile {
+    .btn-categorias-tablet {
         display: block;
     }
 
@@ -37,15 +37,21 @@
         display: none;
     }
 
-    .navbar-top-right {
-        grid-gap: 1rem;
-    }
 }
 
 /* fin tablet portrait */
 
 /* Cell landscape */
 @media (max-width: 736px) {
+    .btn-categorias-tablet, .btn-user-name {
+        display: none;
+    }
+
+    .btn-categorias-mobile {
+        display: block;
+        padding: .5rem;
+        font-size: 2rem;
+    }
 
 }
 
@@ -53,7 +59,13 @@
 
 /* Cell portrait */
 @media (max-width: 480px) {
-
+    .navbar-top {
+        background-color: var(--white);
+        padding: .5rem 1.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
 /* Fin cell portrait */
