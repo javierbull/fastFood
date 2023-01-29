@@ -33,7 +33,15 @@
     .card-category-title {
         font-size: 1.5rem;
         -webkit-text-stroke: 1.5px var(--primary);
-      }
+    }
+
+    .footer-body {
+        margin-bottom: 2rem;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
 
 /* End index */
 }
@@ -42,10 +50,21 @@
 
 /* Tablet portrait */
 @media (max-width: 768px) {
+
+    /* Index */
     .info-delivery {
         display: none;
     }
 
+    .navbar-top {
+        padding: .5rem 2rem;
+    }
+
+    .section, footer {
+        padding: 2rem;
+    }
+
+    /* End index */
 }
 
 /* fin tablet portrait */
