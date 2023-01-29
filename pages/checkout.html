@@ -1,23 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="#" type="image/x-icon"/>
+    <link rel="icon" href="#" type="image/x-icon" />
     <title>Checkout</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/mq.css">
 </head>
+
 <body>
     <header>
         <nav class="navbar-top">
-            <a class="navbar-brand" href="../index.html">
-                <img src="../img/logos/logo.svg" class="navbar-brand-img" alt="Bull Fastfood">
-            </a>
+            <div class="navbar-top-left">
+                <button class="btn button-secondary btn-categorias-mobile" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasSidebarCategoriasMobile" aria-controls="offcanvasSidebarCategoriasMobile">
+                    <span class="material-icons-outlined">
+                        menu
+                    </span>
+                </button>
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../img/logos/logo.svg" class="navbar-brand-img" alt="Bull Fastfood">
+                </a>
+                <button class="btn button-ghost btn-categorias-tablet" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasSidebarCategoriasMobile" aria-controls="offcanvasSidebarCategoriasMobile">
+                    Categorías
+                </button>
+            </div>
 
             <div class="navbar-top-right">
                 <div class="info-delivery">
@@ -27,9 +46,9 @@
                     <div class="wrap-delivery-number">
                         <p class="subtitle-2 delivery-label">Delivery</p>
                         <p class="phone-number subtitle-1">(01) 6531-5000</p>
-                    </div>    
+                    </div>
                 </div>
-                <button class="btn button-ghost">
+                <button class="btn button-ghost btn-user-name">
                     Hola Javier
                 </button>
                 <button class="btn button-primary button-icon">
@@ -43,7 +62,7 @@
         <nav class="navbar-categories">
             <ul class="menu-categories">
                 <li class="list-item">
-                    <a href="../index.html">
+                    <a href="#section-menu">
                         Menú
                     </a>
                 </li>
@@ -53,13 +72,8 @@
                     </a>
                 </li>
                 <li class="list-item">
-                    <a href="personales.html">
+                    <a href="pages/personales.html">
                         Personales
-                    </a>
-                </li>
-                <li class="list-item">
-                    <a href="#">
-                        Para 2
                     </a>
                 </li>
                 <li class="list-item">
@@ -94,17 +108,18 @@
                             <p class="big-form-label">Tipo de entrega</p>
                             <div class="form-group">
                                 <input type="radio" id="delivery" name="deliveryType" value="Delivery" checked>
-                                <label for="delivery">Delivery</label>
-                                <input type="radio" id="pickup" name="deliveryType" value="pickup">
-                                <label for="pickup">Recojo en tienda</label><br>
+                                  <label for="delivery">Delivery</label>
+                                  <input type="radio" id="pickup" name="deliveryType" value="pickup">
+                                  <label for="pickup">Recojo en tienda</label><br>
                             </div>
                         </div>
-    
+
                         <div class="wrap-inputs">
                             <p class="big-form-label">Dirección de envío</p>
                             <div class="wrap-address-delivery">
                                 <div class="radio-address-group">
-                                    <input type="radio" class="radioAddress" id="address1" name="selectAddress"/ checked>
+                                    <input type="radio" class="radioAddress" id="address1" name="selectAddress" /
+                                        checked>
                                     <label for="address1" class="label-address">
                                         <h6>
                                             Casa
@@ -118,7 +133,7 @@
                                     </label>
                                 </div>
                                 <div class="radio-address-group">
-                                    <input type="radio" class="radioAddress" id="address2" name="selectAddress"/>
+                                    <input type="radio" class="radioAddress" id="address2" name="selectAddress" />
                                     <label for="address2" class="label-address">
                                         <h6>
                                             Oficina
@@ -133,14 +148,14 @@
                                 </div>
                             </div>
                         </div>
-    
+
                         <div class="wrap-inputs">
                             <p class="big-form-label">¿Quién recibirá el pedido?</p>
                             <div class="form-group">
                                 <input type="radio" id="user" name="receives" value="user" checked>
-                                <label for="user">Yo mismo</label>
-                                <input type="radio" id="another" name="receives" value="another">
-                                <label for="another">Otra persona</label><br>
+                                  <label for="user">Yo mismo</label>
+                                  <input type="radio" id="another" name="receives" value="another">
+                                  <label for="another">Otra persona</label><br>
                             </div>
                         </div>
 
@@ -160,8 +175,8 @@
                                 <div class="form-group">
                                     <label for="type-id">Tipo de documento</label><br>
                                     <select name="cars" id="type-id" class="form-input">
-                                      <option value="DNI" selected>DNI</option>
-                                      <option value="CE">CE</option>
+                                        <option value="DNI" selected>DNI</option>
+                                        <option value="CE">CE</option>
                                     </select>
                                 </div>
                                 <div class="form-group">
@@ -173,7 +188,8 @@
                             <div class="wrap-form-row">
                                 <div class="form-group">
                                     <label for="user-email">Correo</label><br>
-                                    <input type="email" id="user-email" class="form-input" name="fname" value="javierbull@gmail.com"><br>
+                                    <input type="email" id="user-email" class="form-input" name="fname"
+                                        value="javierbull@gmail.com"><br>
                                 </div>
                                 <div class="form-group">
                                     <label for="user-tel">Celular</label><br>
@@ -185,10 +201,11 @@
                         <div class="wrap-inputs">
                             <p class="big-form-label">Seleccione método de pago</p>
                             <div class="form-group">
-                                <input type="radio" id="payment-registered" name="payment" value="payment-registered" checked>
-                                <label for="payment-registered">Mi mastercard que termina en 4562</label>
-                                <input type="radio" id="new-payment" name="payment" value="new-payment">
-                                <label for="new-payment">Agregar tarjeta</label><br>
+                                <input type="radio" id="payment-registered" name="payment" value="payment-registered"
+                                    checked>
+                                  <label for="payment-registered">Mi mastercard que termina en 4562</label>
+                                  <input type="radio" id="new-payment" name="payment" value="new-payment">
+                                  <label for="new-payment">Agregar tarjeta</label><br>
                             </div>
                         </div>
                     </form>
@@ -229,9 +246,9 @@
                     </div>
                 </div>
                 <div class="summary-footer">
-                    <a href="#" class="btn button-primary">
+                    <button class="btn button-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         Finalizar compra
-                    </a>
+                    </button>
                     <a href="../index.html" class="btn button-secondary">
                         Seguir comprando
                     </a>
@@ -341,5 +358,33 @@
             </p>
         </div>
     </footer>
+
+    <!-- Modals -->
+    <div class="modal fade" id="exampleModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header modal-header-center">
+                    <h5 class="modal-title" id="exampleModalLabel">¡GRACIAS POR TU COMPRA!</h5>
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                </div>
+                <div class="modal-body">
+                    <p class="subtitle-1">
+                        Estamos preparando tu pedido
+                    </p>
+                    <p>
+                        En menos de 30 minutos los tendrás en tus manos
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                    <a href="../index.html" class="btn button-primary">Volver al inicio</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modals -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
+
 </html>
