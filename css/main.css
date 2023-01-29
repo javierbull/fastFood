@@ -315,6 +315,7 @@ html {
 
     .header-section h2 {
       font-size: 2rem;
+      margin-bottom: 0;
     }
     /* End Sections */
 
@@ -328,7 +329,7 @@ html {
     }
 
     .card-category {
-      background-color: deepskyblue;
+      /* background-color: deepskyblue; */
       width: 550px;
       height: auto;
       border-radius: 1rem;
