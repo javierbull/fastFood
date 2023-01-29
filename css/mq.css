@@ -22,9 +22,18 @@
         display: block;
     }
 
-    .navbar-top {
+    .container-products {
+        gap: 1rem;
+      }
 
+    .card-category {
+        width: 280px;
     }
+
+    .card-category-title {
+        font-size: 1.5rem;
+        -webkit-text-stroke: 1.5px var(--primary);
+      }
 
 /* End index */
 }
