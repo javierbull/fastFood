@@ -1,25 +1,42 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="#" type="image/x-icon"/>
+    <link rel="icon" href="#" type="image/x-icon" />
     <title>Personales</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/mq.css">
 </head>
+
 <body>
     <header>
         <nav class="navbar-top">
-            <a class="navbar-brand" href="../index.html">
-                <img src="../img/logos/logo.svg" class="navbar-brand-img" alt="Bull Fastfood">
-            </a>
+            <div class="navbar-top-left">
+                <button class="btn button-secondary btn-categorias-mobile" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasSidebarCategoriasMobile" aria-controls="offcanvasSidebarCategoriasMobile">
+                    <span class="material-icons-outlined">
+                        menu
+                    </span>
+                </button>
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../img/logos/logo.svg" class="navbar-brand-img" alt="Bull Fastfood">
+                </a>
+                <button class="btn button-ghost btn-categorias-tablet" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasSidebarCategoriasMobile" aria-controls="offcanvasSidebarCategoriasMobile">
+                    Categorías
+                </button>
+            </div>
 
             <div class="navbar-top-right">
                 <div class="info-delivery">
@@ -29,9 +46,9 @@
                     <div class="wrap-delivery-number">
                         <p class="subtitle-2 delivery-label">Delivery</p>
                         <p class="phone-number subtitle-1">(01) 6531-5000</p>
-                    </div>    
+                    </div>
                 </div>
-                <button class="btn button-ghost">
+                <button class="btn button-ghost btn-user-name">
                     Hola Javier
                 </button>
                 <button class="btn button-primary button-icon">
@@ -45,7 +62,7 @@
         <nav class="navbar-categories">
             <ul class="menu-categories">
                 <li class="list-item">
-                    <a href="../index.html">
+                    <a href="#section-menu">
                         Menú
                     </a>
                 </li>
@@ -55,13 +72,8 @@
                     </a>
                 </li>
                 <li class="list-item">
-                    <a href="#">
+                    <a href="pages/personales.html">
                         Personales
-                    </a>
-                </li>
-                <li class="list-item">
-                    <a href="#">
-                        Para 2
                     </a>
                 </li>
                 <li class="list-item">
@@ -82,6 +94,68 @@
             </ul>
         </nav>
     </header>
+
+    <!-- Off canvas categories mobile -->
+    <div class="offcanvas offcanvas-start offcanvas-categories-mobile" tabindex="-1"
+        id="offcanvasSidebarCategoriasMobile" aria-labelledby="offcanvasSidebarCategoriasMobileLabel">
+        <div class="offcanvas-header">
+            <a class="navbar-brand" href="#">
+                <img src="../img/logos/logo.svg" class="navbar-brand-img" alt="Bull Fastfood">
+            </a>
+            <!-- <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
+        </div>
+        <div class="offcanvas-body">
+            <ul class="menu-sidebar-mobile">
+                <li>
+                    <a href="cuenta.html">
+                        MI CUENTA
+                    </a>
+                </li>
+                <li>
+                    <a href="tel: (01) 612 8000">
+                        LLÁMANOS
+                    </a>
+                </li>
+                <li>
+                    <a href="../index.html">
+                        MENÚ
+                    </a>
+                </li>
+                <li>
+                    <a href="promociones.html">
+                        PROMOCIONES
+                    </a>
+                </li>
+                <li>
+                    <a href="personales.html">
+                        PERSONALES
+                    </a>
+                </li>
+                <li>
+                    <a href="combos.html">
+                        COMBOS
+                    </a>
+                </li>
+                <li>
+                    <a href="complementos.html">
+                        COMPLEMENTOS
+                    </a>
+                </li>
+                <li>
+                    <a href="bebidas.html">
+                        BEBIDAS
+                    </a>
+                </li>
+                <li>
+                    <a href="locales.html">
+                        LOCALES
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- End Off canvas categories mobile -->
+
     <main>
         <section class="section">
             <div class="header-section">
@@ -102,7 +176,7 @@
                         </a>
                     </div>
                 </div>
-    
+
                 <div class="card-product">
                     <div class="card-product-header">
                         <img src="../img/products/product.jpg" alt="Hamburguesa">
@@ -238,7 +312,7 @@
                     </div>
                 </div>
             </div>
-            
+
         </section>
     </main>
     <footer>
@@ -344,6 +418,9 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
