@@ -198,7 +198,6 @@ html {
   /* INDEX */
   header {
     background-color: var(--white);
-    background-color: var(--primary);
     box-shadow: var(--card-shadow);
     position: fixed;
     width: 100%;
