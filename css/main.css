@@ -857,3 +857,32 @@ html {
   }
   /* END MODAL */
 
+  /* LOCALES PAGE */
+  .grid-container-location {
+    /* background-color: lavender; */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    grid-gap: 2rem;
+  }
+
+  .card-location {
+    background-color: var(--white);
+    box-shadow: var(--card-shadow);
+    padding: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+  }
+
+  .card-location h2 {
+    font-size: 1.5rem;
+    color: var(--primary);
+  }
+
+  .wrap-card-location-data {
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+  }
+
+  /* END LOCALES PAGES */
+
